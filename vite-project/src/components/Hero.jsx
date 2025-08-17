@@ -151,13 +151,6 @@ const Hero = () => {
       ease: 'power3.out',
     });
 
-  
-
-
-
-
-
-
     ScrollTrigger.create({
       trigger: section3Ref.current,
       start: 'top center',
@@ -173,9 +166,9 @@ const Hero = () => {
           opacity: 0,
           y: 80,
         });
-        showOverlay.pause(0); // reset timeline
+        showOverlay.pause(0); 
       },
-      // markers: true,
+     
     });
   }, []);
   
@@ -184,7 +177,7 @@ const Hero = () => {
     const heroImg = kingRef.current;
     const section1 = section1Ref.current;
     const section2 = section2Ref.current;
-    const section3 = document.querySelector('.section3'); // Make sure you have this
+    const section3 = document.querySelector('.section3'); 
   
     if (!heroImg || !section1 || !section2 || !section3) return;
   
@@ -195,11 +188,11 @@ const Hero = () => {
         endTrigger: section3,
         end: 'top center',
         scrub: true,
-        // markers: true,
+        
       },
     });
   
-    // 🟢 Hero → Section 1
+    
     tl.to(heroImg, {
       x: 700,
       y: 810,
@@ -208,7 +201,6 @@ const Hero = () => {
       ease: 'power2.out',
     });
   
-    // 🔵 Section 1 → Section 2
     tl.to(heroImg, {
       x: 1250,
       y: 1110,
@@ -217,7 +209,6 @@ const Hero = () => {
       ease: 'power2.inOut',
     });
   
-    // 🟣 Section 2 → Section 3
     tl.to(heroImg, {
       x: 1830,
       y: 1890,
@@ -254,7 +245,6 @@ const Hero = () => {
 
   </div>
 
-  {/* ⬇️ Move this outside so it’s layered above everything else */}
   <div className="hero-model1">
     <img
       src="./images/king.png"
@@ -265,7 +255,6 @@ const Hero = () => {
   </div>
   <div className="section1" ref={section1Ref}>
   <div className="section1-left">
-    {/* optional image */}
   </div>
   <div className="section1-right">
     <h1 className="section1-heading">Master Every Move</h1>
