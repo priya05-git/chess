@@ -2,6 +2,8 @@
 
 A modern, interactive chess game built with React and Vite. Features smooth animations, responsive design, and an intuitive user interface.
 
+![Chess Game Screenshot](public/images/king.png)
+
 ## Features
 
 - **Interactive Chess Board**: Full chess game with piece movement and rules validation
